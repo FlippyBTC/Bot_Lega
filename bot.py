@@ -13,7 +13,7 @@ async def bot_start_command(message: types.Message):
 
 @dp.message_handler(commands=['help'])
 async def bot_help_command(message: types.Message):
-    await message.reply("Этот бот может отвечать на твои сообщения.")
+    await message.reply("Этот бот будет повторять твои сообщения.")
 
 @dp.message_handler()
 async def echo_message(msg: types.Message):
